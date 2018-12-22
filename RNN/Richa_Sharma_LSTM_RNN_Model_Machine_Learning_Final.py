@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
+from sklearn import metrics
 
 NUM_EPOCHS=100
 
@@ -155,6 +156,10 @@ opt = tf.keras.optimizers.Adam(lr=3e-3)
 model.compile(loss='sparse_categorical_crossentropy', optimizer=opt, metrics=['accuracy'])
 
 history = model.fit(x_train, y_train, epochs=NUM_EPOCHS, validation_data=(x_test, y_test))
+
+y_pred= model.predict_classes(x_test)
+print("Classification report:\n{0}".format(metrics.classification_report(y_test, y_pred)))
+print("Classification accuracy: {0}".format(metrics.accuracy_score(y_test, y_pred)))
 
 # Plotting the loss vs epoch plot using matplotlib.pyplot
 
