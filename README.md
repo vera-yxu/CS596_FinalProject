@@ -5,7 +5,7 @@ Contribution:
 CNN - Emma Westin, Ying Xu  
       Example run for CNN: python CNNmodel.py --e 50 --o Adadelta   
   
-[RNN](https://github.com/vera-yxu/CS596_FinalProject/tree/master/RNN) - Richa Sharma<br>
+[RNN](RNN) - Richa Sharma<br>
   
 DNN - Basilin Benson  
   
