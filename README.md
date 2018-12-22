@@ -3,7 +3,10 @@ Implementing CNN, RNN, DNN and logistic regression for classifying DNA splice si
 
 Contribution:  
 CNN - Emma Westin, Ying Xu  
-      Example run for CNN: python CNNmodel.py --e 50 --o Adadelta
+      Example run for CNN: python CNNmodel.py --e 50 --o Adadelta   
+  
 RNN - Richa Sharma  
+  
 DNN - Basilin Benson  
+  
 Logistic Regression - David Lee, William Liu  
