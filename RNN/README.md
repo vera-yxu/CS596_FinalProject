@@ -1,6 +1,9 @@
 Author: Richa Sharma <br>
 email: rbsharma@sdsu.edu
 
+<h2>Usage</h2>
+python Richa_Sharma_LSTM_RNN_Model_Machine_Learning_Final.py
+
 <h2>Preprocessing of data for LSTM RNN </h2><br>
 To prepare the data for the LSTM model, the DNA sequence samples were first extracted from the splice data file, shuffled and converted into a string of integers using the following scheme:A':1, 'T':2, 'G':3, 'C':4, 'D':5, 'N':6, 'S':7, 'R':8. Next, we defined a parameter called kmers(length = k). Basically, we divided each DNA sequence, in to a series of words of length k and obtained a specific number of kmers. Since, the input for the model is an array, we converted these strings into an array, whose shape was determined by length of the kmers specified. Thus, the data array was obtained with a shape of (samples, number of kmers, kmer length). 
 Similarly, the corresponding classification label EI, IE or N for each sample was extracted from the splice data and converted in to a vector using the following scheme:EI': 0, 'IE': 1, 'N': 2. The shape of the labels vector obtained is (samples, 1).
