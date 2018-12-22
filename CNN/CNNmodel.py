@@ -108,11 +108,9 @@ model.add(Conv2D(1, kernel_size=(3, 4),
                  input_shape=(60,4,1)))
 model.add(Flatten())
 model.add(Dense(58, activation='relu'))
-model.add(Dropout(0.25))
 model.add(Dense(28, activation='relu'))
-model.add(Dropout(0.25))
 model.add(Dense(10, activation='relu'))
-model.add(Dropout(0.5))
+model.add(Dropout(0.25)) # applying one dropout layer before output layer
 model.add(Dense(num_classes, activation='softmax'))
 
 # adam optimizer
