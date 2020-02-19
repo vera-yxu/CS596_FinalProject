@@ -5,7 +5,7 @@ Contribution:
 CNN - Emma Westin, Ying Xu  
       Example run for CNN: python CNNmodel.py --e 50 --o Adadelta   
   
-[RNN](RNN) - Richa Sharma<br>
+[RNN](RNN) - Richa Kalia<br>
   
 DNN - Basilin Benson  
   
